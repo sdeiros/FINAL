@@ -70,11 +70,13 @@ COMMIT;
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(255) NOT NULL,
     descricao TEXT NOT NULL,
-    foto varchar(255) DEFAULT NULL,
-    documento varchar(255) DEFAULT NULL,
+    foto VARCHAR(255) DEFAULT NULL,
+    documento VARCHAR(255) DEFAULT NULL,
     status VARCHAR(50) NOT NULL,
     advogado_nome VARCHAR(255) DEFAULT NULL,
     concluido TINYINT(1) NOT NULL DEFAULT 0,
+    oculto BOOLEAN DEFAULT 0,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-); 
+);
+
 </code>
