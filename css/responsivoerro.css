@@ -1,0 +1,28 @@
+@media (max-width: 1920px) {
+    .erro-txt {
+        top: 6rem;
+        font-size: 280px;
+    }
+
+    .erro {
+        top: 3rem;
+        font-size: 80px;
+    }
+
+    h3 {
+        top: 6rem;
+        font-size: 32px;
+    }
+
+    .back {
+        top: 42rem;
+        cursor: pointer;
+        font-size: 24px;
+        width: 400px;
+        height: 54px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+}

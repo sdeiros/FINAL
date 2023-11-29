@@ -1,0 +1,52 @@
+@media (max-width: 1920px) {
+    h1{
+        font-size: 24px;
+        top: 6rem;
+        left: 85.6rem;
+    }
+
+    #img-main .google-icon-main {
+        height: 4rem;
+        top: 10rem;
+    }
+
+    #img-main .facebook-icon-main {
+        height: 4rem;
+        top: 10rem;
+    }
+
+    #img-main .twitter-icon-main {
+        height: 4rem;
+        top: 10rem;
+    }
+
+    #img-main .apple-icon-main {
+        height: 4.5rem;
+        top: 10rem;
+    }
+
+    .ou{
+        font-size: 25px;
+        top: 16rem;
+        left: 89.6rem;
+    }
+
+    #login{
+        left: 70rem;
+        font-size: 24px;
+    }
+
+    #senha{
+        left: 70rem;
+        font-size: 24px;
+    }
+
+    #cadastrar{
+        left: 70rem;
+        font-size: 24px;
+    }
+
+    .esqueci-senha{
+        font-size: 20px;
+    }
+}

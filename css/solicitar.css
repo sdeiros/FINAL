@@ -1,0 +1,115 @@
+body {
+    flex-shrink: 0;
+    background: #0C0C0C;
+}
+
+#menu {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid #FFF0BC;
+    background: #0C0C0C;
+}
+
+.logo-nav {
+    position: relative;
+    width: 2.1rem;
+    height: 3rem;
+    flex-shrink: 0;
+    left: 3.8rem;
+    top: 0.6rem;
+}
+
+h1 {
+    position: relative;
+    color: #FFFFFF;
+    width: 40%;
+    left: 4rem;
+    top: 2rem;
+}
+
+.apre {
+    position: relative;
+    width: 92%;
+    color: #FFFFFF;
+    left: 4rem;
+    top: 3rem;
+}
+
+.form-titulo {
+    position: relative;
+    width: 20%;
+    color: #000000;
+    left: 4rem;
+    top: 20rem;
+
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background: #FFFfff;
+    padding: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.txt-conteudo {
+    position: absolute;
+    width: 20%;
+    color: #FFFFFF;
+    left: 4rem;
+    top: 24rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+#conteudo {
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    color: #000000;
+    left: 4rem;
+    top: 26rem;
+
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background: #FFFfff;
+    padding: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.btn-sub {
+    position: relative;
+    width: 10rem;
+    height: 31px;
+    flex-shrink: 0;
+    left: 84%;
+    top: 20rem;
+
+    border: none;
+    border-radius: 10px;
+    background: #FFC36A;
+
+    color: #0C0C0C;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+#titulo.form-titulo {
+    top: 4rem;
+}

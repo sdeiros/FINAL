@@ -1,0 +1,276 @@
+@media (max-width: 1920px) {
+    .sobre {
+        right: 10rem;
+        font-size: 16px;
+        left: 80rem;
+    }
+
+    .logo-nav {
+        position: absolute;
+        width: 68px;
+        height: 82px;
+        padding: 14px;
+        left: 3.8rem;
+    }
+
+    .inform {
+        right: 12rem;
+        font-size: 16px;
+        left: 66rem;
+    }
+
+    .login {
+        font-size: 16px;
+    }
+
+    .cadastrar {
+        font-size: 16px;
+    }
+
+    .fundo{
+        height: 22%;
+    }
+
+    .tela01{
+        width: 38rem;
+        height: 56rem;
+        left: 64%;
+    }
+
+    .tela02{
+        width: 38rem;
+        height: 56rem;
+    }
+
+    #card01-main{
+        top: 74rem;
+        width: 94%;
+        height: 54rem;
+        left: 3rem;
+        right: 3rem;;
+    }
+
+    #card01-main .titulo-card1{
+        font-size: 50px;
+    }
+
+    #card01-main .subtitulo-card1{
+        top: 41rem;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #card01-main p{
+        font-size: 24px;
+        top: 84.5%;
+        left: 19rem;
+    }
+
+    #card01-main .data{
+        top: 90%; 
+        font-size: 24px;
+    }
+
+    #card01-main .hora{
+        top: 94%;
+        font-size: 24px;
+    }
+
+    .v-mais{
+        left: 46%;
+        top: 47.8%;
+        font-size: 26px;
+    }
+
+    .sobreposição{
+        height: 58rem;
+    }
+
+    .titulo-main{
+        left: 44%;
+        top: 68rem;
+    }
+
+    .star{
+        top: 68rem;
+        left: 75rem;
+    }
+
+    .star01-main{
+        top: 68rem;
+        left: 48rem;
+    }
+
+    .sobre-main{
+        top: 140rem;
+        height: 58rem;
+    }
+
+    .feira-main{
+        width: 30rem;
+        height: 44rem;
+    }
+
+    .fundo-degrade{
+        height: 50rem;
+    }
+
+    .txt01{
+        width: 67rem;
+        font-size: 26px;
+        line-height: 36px;
+        top: 28%;
+    }
+
+    .txt02{
+        width: 67rem;
+        font-size: 26px;
+        line-height: 36px;
+        top: 56%;
+    }
+
+    .Candido{
+        top: 196rem;
+    }
+
+    .obra-candido{
+        width: 68rem;
+        height: 67rem;
+    }
+
+    .pelicula{
+        height: 69rem;
+    }
+
+    .sobre-candido{
+        top: 4rem;
+        left: 86.2rem;
+        font-size: 50px;
+    }
+
+    .brasil-candido{
+        left: 72rem;
+        font-size: 24px;
+        top: 8rem;
+    }
+
+    .paisrefugiados{
+        left: 84rem;
+        font-size: 24px;
+        top: 8rem;
+    }
+
+    .artistacandido{
+        left: 100rem;
+        font-size: 24px;
+        top: 8rem;
+    }
+
+    .txt01-candido{
+        top: 14rem;
+        font-size: 24px;
+        left: 71.5rem;
+        width: 44rem;
+    }
+
+    .txt02-candido{
+        left: 71.5rem;
+        font-size: 24px;
+        width: 44rem;
+        top: 30rem;
+    }
+
+    .txt03-candido{
+        left: 71.5rem;
+        font-size: 24px;
+        width: 44rem;
+        top: 54rem;
+    }
+
+}
+
+@media (max-width: 1366px) {
+    
+    .cadastrar {
+        font-size: 14px;
+    }
+
+    .inform {
+        left: 46%;
+        top: 1.3rem;
+
+        font-size: 14px;
+    }
+
+    .sobre {
+        left: 70%;
+        right: 19rem;
+        top: 1.3rem;
+        bottom: 92.57%;
+
+        font-size: 14px;
+    }
+
+    .login {
+        right: 14%;
+        left: 78%;
+        font-size: 14px;
+    }
+
+    .linha {
+        left: 47.5%;
+    }
+
+    .titulo {
+        left: 43.9%;
+    }
+
+    .star {
+        top: 48rem;
+        left: 64%;
+    }
+
+    .star01-main {
+        top: 48rem;
+
+        left: 38.2%;
+    }
+
+    #card01-main .subtitulo-card1 {
+        width: 94%;
+        font-size: 14px;
+    }
+
+    #card01-main p {
+        left: 90.5%;
+        font-size: 14px;
+    }
+
+    .tela01 {
+        left: 68%;
+        height: 12%;
+        width: 28%;
+    }
+
+    .tela02 {
+        left: 4%;
+        height: 12%;
+        width: 28%;
+    }
+
+    .titulo-main {
+        top: 48rem;
+        font-size: 26px;
+        left: 42%;
+    }
+
+
+    #card01-main {
+        top: 54rem;
+    }
+
+    #card02-main .subtitulo-card2 {
+        width: 94%;
+        font-size: 14px;
+    }
+}

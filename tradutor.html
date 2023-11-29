@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor de Texto</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/tradutor.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Postagens</title>
+
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./Imagens/FavIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Imagens/FavIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Imagens/FavIcon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="./Imagens/FavIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <h1>Tradutor de Texto</h1>
+
+    <!-- Adicione os elementos select para escolher o idioma de origem e destino -->
+    <select id="idiomaOrigem">
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+        <option value="de">Alemão</option>
+        <option value="pt-br">Português</option>
+        <!-- Adicione mais opções conforme necessário -->
+    </select>
+
+    <textarea id="textoParaTraduzir" placeholder="Digite o texto ou selecione um arquivo PDF"></textarea>
+
+    <select id="idiomaDestino">
+        <option value="" default selected>Para onde deseja traduzir?</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+        <option value="de">Alemão</option>
+        <option value="pt-br">Português</option>
+        <!-- Adicione mais opções conforme necessário -->
+    </select>
+
+    <!-- Adicione um elemento de upload de arquivo PDF -->
+    <input type="file" id="arquivoParaTraduzir" accept=".pdf">
+
+    <button onclick="traduzir()">Traduzir</button>
+    <p><strong>Texto traduzido:</strong></p>
+    <div id="textoTraduzido"></div>
+    <p id="erro" style="color: red;"></p> <!-- Elemento para exibir mensagens de erro -->
+
+    <script>
+        async function traduzir() {
+            const idiomaOrigem = document.getElementById('idiomaOrigem').value;
+            const idiomaDestino = document.getElementById('idiomaDestino').value;
+            const arquivoParaTraduzir = document.getElementById('arquivoParaTraduzir').files[0];
+            const textoParaTraduzir = document.getElementById('textoParaTraduzir').value;
+
+            // Verifique se o campo de arquivo ou texto foi preenchido
+            if (!arquivoParaTraduzir && textoParaTraduzir.trim() === '') {
+                document.getElementById('erro').textContent = 'Por favor, selecione um arquivo ou digite texto para traduzir.';
+                return;
+            }
+
+            // Limpe mensagens de erro anteriores
+            document.getElementById('erro').textContent = '';
+
+            let textoAEnviar = '';
+
+            if (arquivoParaTraduzir) {
+                const reader = new FileReader();
+
+                reader.onload = async function (e) {
+                    const arrayBuffer = e.target.result;
+
+                    try {
+                        const text = await extractTextFromPDF(arrayBuffer);
+                        textoAEnviar = text;
+                        realizarTraducao(textoAEnviar, idiomaDestino);
+                    } catch (error) {
+                        console.error('Erro ao extrair texto do PDF:', error);
+                        document.getElementById('textoTraduzido').textContent = 'Erro ao ler o PDF';
+                    }
+                };
+
+                reader.readAsArrayBuffer(arquivoParaTraduzir);
+            } else {
+                realizarTraducao(textoParaTraduzir, idiomaDestino);
+            }
+        }
+
+        async function extractTextFromPDF(arrayBuffer) {
+            const pdf = await pdfjsLib.getDocument({ data: new Uint8Array(arrayBuffer) }).promise;
+            const numPages = pdf.numPages;
+            let text = '';
+
+            for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+                const page = await pdf.getPage(pageNum);
+                const pageText = await page.getTextContent();
+                text += pageText.items.map(item => item.str).join(' ') + '\n';
+            }
+
+            return text;
+        }
+
+        function realizarTraducao(textoParaTraduzir, idiomaDestino) {
+            const idiomaOrigem = document.getElementById('idiomaOrigem').value;
+
+            // Faça uma solicitação à API do Google Translate
+            fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${idiomaOrigem}&tl=${idiomaDestino}&dt=t&q=${encodeURIComponent(textoParaTraduzir)}`)
+                .then(response => response.json())
+                .then(data => {
+                    const textoTraduzido = data[0][0][0];
+                    document.getElementById('textoTraduzido').innerHTML = textoTraduzido;
+                })
+                .catch(error => {
+                    console.error('Erro ao traduzir:', error);
+                    document.getElementById('textoTraduzido').textContent = 'Erro ao traduzir';
+                });
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</body>
+
+</html>

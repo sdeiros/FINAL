@@ -1,0 +1,226 @@
+body{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #000;
+}
+
+.fundo{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    right: 0%;
+
+    background: #09150A;
+}
+
+.logo{
+    position: absolute;
+    left: 01%;
+    top: 88%;
+}
+
+.image{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0%
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+  
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 10}
+}
+.linhas-main {
+    position: absolute;
+    left: 59%;
+    top: 10%;
+    height: 16%;
+    width: 34%;
+}
+
+#img-main .google-icon-main {
+    position: absolute;
+    left: 68%;
+    right: 30.69%;
+    top: 14%;
+    bottom: 74.42%;
+    height: 3rem;
+}
+
+#img-main .facebook-icon-main {
+    position: absolute;
+    left: 72%;
+    right: 26.75%;
+    top: 14%;
+    bottom: 74.47%;
+    height: 3rem;
+
+}
+
+#img-main .twitter-icon-main {
+    position: absolute;
+    left: 77%;
+    right: 22.93%;
+    top: 14%;
+    bottom: 74.48%;
+    height: 3rem;
+}
+
+#img-main .apple-icon-main {
+    position: absolute;
+    left: 81%;
+    right: 18.99%;
+    top: 13.8%;
+    bottom: 74.38%;
+    height: 3.4rem;
+}
+
+h1 {
+    position: absolute;
+    left: 61.2rem;
+    right: 1rem;
+    top: 3rem;
+    color: #ffffff;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.ou {
+    position: absolute;
+    left: 75%;
+    right: 0rem;
+    top: 22%;
+    bottom: 66.58%;
+    color: #FFFFFF;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#login{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 50rem;
+    right: 4rem;
+    top: 32%;
+    bottom: 56.98%;
+    width: 34%;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    
+    color: #717171;
+        
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+#senha{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 50rem;
+    right: 4rem;
+    top: 44%;
+    bottom: 56.98%;
+    width: 34%;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: #717171;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+#cadastrar{
+    position: absolute;
+    left: 50rem;
+    right: 4rem;
+    top: 56.07%;
+    bottom: 56.98%;
+    width: 34%;
+    height: 58px;
+    
+    background: #FFC36A;
+    border-radius: 100px;
+    border: none;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #000000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#cadastrar:hover{
+    top: 55%;
+    background: #ECAD4F;
+}
+
+.esqueci-senha{
+    position: absolute;
+    left: 70%;;
+    top: 70%;
+    width: 12%;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0px;
+
+    color: #919191;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.esqueci-senha:hover{
+    color: #e0e0e0;
+}
+
+.input-email{
+    padding-left: 18px;
+}
+
+.input-senha{
+    padding-left: 18px;
+}

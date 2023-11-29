@@ -1,0 +1,339 @@
+body{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #000;
+}
+
+.fundo{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    right: 0%;
+
+    background: #09150A;
+}
+
+.logo{
+    position: absolute;
+    left: 01%;
+    top: 88%;
+}
+
+.image{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0%
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+  
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 10}
+}
+
+h1 {
+    position: absolute;
+    left: rem;
+    right: 23rem;
+    top: 4.8rem;
+    color: #ffffff;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+
+.ou {
+    position: absolute;
+    left: 51%;
+    right: 0rem;
+    top: 21%;
+    bottom: 66.58%;
+    color: #FFFFFF;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.linhas-main {
+    position: absolute;
+    left: 59%;
+    top: 10%;
+    height: 12%;
+    width: 34%;
+
+}
+
+#img-main .google-icon-main {
+    position: absolute;
+    left: 68%;
+    right: 30.69%;
+    top: 13%;
+    bottom: 74.42%;
+    height: 4rem;
+}
+
+#img-main .facebook-icon-main {
+    position: absolute;
+    left: 72%;
+    right: 26.75%;
+    top: 13%;
+    bottom: 74.47%;
+    height: 4rem;
+
+}
+
+#img-main .twitter-icon-main {
+    position: absolute;
+    left: 77%;
+    right: 22.93%;
+    top: 13%;
+    bottom: 74.48%;
+    height: 4rem;
+}
+
+#img-main .apple-icon-main {
+    position: absolute;
+    left: 81%;
+    right: 18.99%;
+    top: 13%;
+    bottom: 74.38%;
+    height: 4.6rem;
+}
+
+.locationtt {
+    position: absolute;
+    left: 59.39%;
+    right: 30.61%;
+    top: 36.48%;
+    bottom: 60.84%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+select {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 59%;
+    right: 7%;
+    top: 28.21%;
+    bottom: 64.94%;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    padding-left: 2rem;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+option {
+    position: fixed;
+    left: 59.39%;
+    right: 30.61%;
+    top: 36.48%;
+    bottom: 60.84%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 29px;
+
+    color: #717171;
+}
+
+option:hover {
+    position: fixed;
+    left: 59.39%;
+    right: 30.61%;
+    top: 36.48%;
+    bottom: 60.84%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 29px;
+
+    color: #717171;
+}
+
+option[default] {
+    display: none;
+}
+
+#nome {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 59%;
+    right: 7%;
+    top: 38.38%;
+    bottom: 54.77%;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    padding-left: 2rem;
+
+    transition: 1s;
+}
+
+#email {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 59%;
+    right: 7%;
+    top: 48.38%;
+    bottom: 44.77%;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    padding-left: 2rem;
+
+    transition: 1s;
+}
+
+#senha {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 59%;
+    right: 7%;
+    top: 58.38%;
+    bottom: 34.77%;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+    padding-left: 2rem;
+
+    transition: 1s;
+}
+
+#criar {
+    position: absolute;
+    left: 59%;
+    right: 7%;
+    top: 70%;
+    bottom: 23%;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+
+    background: #FFC36A;
+    border-radius: 100px;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#criar:hover{
+    top: 68%;
+    bottom: 25%;
+    background: #ECAD4F;
+}
+
+@keyframes slide-down {
+    from { transform: translateY(0); }
+    to { transform: translateY(76px); }
+}
+
+#criar.slide-down {
+    animation: slide-down 0.3s ease-in-out forwards;
+}
+
+p {
+    position: absolute;
+    left: 60%;
+    right: 8%;
+    top: 80.84%;
+    bottom: 15.09%;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+span{
+    cursor:pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #ffffff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #081309;
+    border-radius: 28px;
+}

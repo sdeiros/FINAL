@@ -1,0 +1,97 @@
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.enviar {
+    position: absolute;
+    left: 36.77%;
+    right: 29.48%;
+    top: 52%;
+    bottom: 42%;
+
+    background: #FFC36A;
+    border-radius: 100px;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.enviar:hover {
+    top: 50%;
+    bottom: 44%;
+    background: #ECAD4F;
+}
+
+.campo {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 36.59%;
+    right: 29.66%;
+    top: 40.93%;
+    bottom: 52.22%;
+
+    background: #FFFFFF;
+    border: 2px solid #F58008;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #717171;
+    padding: 24px;
+}
+
+.aviso {
+    position: absolute;
+    width: 329px;
+    height: 29px;
+    left: 865px;
+    top: 386px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.degrade {
+    position: absolute;
+    left: 35.73%;
+    right: 28.59%;
+    top: 36.94%;
+    bottom: 36.3%;
+
+    background: rgba(0, 0, 0, 0.3);
+    filter: blur(50px);
+}
+
+.logo {
+    position: absolute;
+    left: 50.26%;
+    right: 46.72%;
+    top: 2.59%;
+    bottom: 89.72%;
+    background: none;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100vh;
+}

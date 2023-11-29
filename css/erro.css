@@ -1,0 +1,120 @@
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #09150A;
+}
+
+nav {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 100%;
+    height: 70px;
+
+    background: #09150A;
+    border-bottom: 1px solid #FFF0BC;
+}
+
+.logo {
+    position: relative;
+    width: 68px;
+    height: 82px;
+    padding: 14px;
+    left: 3.8rem;
+}
+
+.pelicula {
+    position: absolute;
+    left: 0.03%;
+    right: -0.03%;
+    top: 4rem;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(112.57deg, rgba(0, 0, 0, 0.1) 14.68%, rgba(0, 0, 0, 0) 100%);
+}
+
+.erro-txt {
+    position: absolute;
+    width: 10%;
+    height: 225px;
+    left: 4rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220px;
+    line-height: 320px;
+
+    color: #3A412E;
+}
+
+.erro {
+    position: absolute;
+    width: 543px;
+    height: 102px;
+    left: 6rem;
+    padding-top: 8%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 102px;
+
+    color: #FFFEFE;
+}
+
+h3 {
+    position: absolute;
+    width: 551px;
+    height: 96px;
+    left: 6rem;
+    padding-top: 20%;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+}
+
+.back {
+    position: absolute;
+    top: 60%;
+    left: 6rem;
+    width: 280px;
+    height: 44px;
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    background: #FFC36A;
+    border-radius: 100px;
+    color: #000000;
+
+    cursor: pointer;
+
+}
+
+p {
+    position: absolute;
+    width: 826px;
+    height: 41px;
+    left: 6rem;
+    padding-top: 76vh;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+
+    color: #9A9A9A;
+}
